@@ -186,10 +186,10 @@
 
     /* CAROUSEL */
     .pub-carousel { position: relative; padding-left: 52px; display: flex; flex-direction: column; justify-content: center; }
-    .carousel-track { position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 4px; overflow: hidden; background: var(--rule); }
+    .carousel-track { position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 4px; overflow: hidden; background: #ffffff; }
     .carousel-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.7s ease; }
     .carousel-slide.active { opacity: 1; }
-    .carousel-slide img { width: 100%; height: 100%; object-fit: cover; }
+    .carousel-slide img { width: 100%; height: 100%; object-fit: contain; }
     .carousel-slide .slide-placeholder {
       width: 100%; height: 100%; display: flex; flex-direction: column;
       align-items: center; justify-content: center; gap: 12px;
@@ -271,28 +271,22 @@
   <div class="hero-inner">
     <div class="hero-text">
       <div class="fade-up hero-eyebrow">Software Engineer · HPC / GPU</div>
-      <h1 class="fade-up"><em>XYQ</em></h1>
-      <p class="fade-up hero-title">High-Performance Computing · Distributed Systems · ML Systems</p>
+      <h1 class="fade-up"><em>XY Qin</em></h1>
+      <p class="fade-up hero-title">High-Performance Computing n GPU/CPU · Distributed Systems · ML Systems</p>
       <p class="fade-up hero-bio">
         <span id="typewriter"></span><span class="type-cursor" id="type-cursor">|</span>
       </p>
       <div class="fade-up hero-links">
         <a class="btn btn-primary" href="https://www.linkedin.com/in/XiuyiQin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a class="btn btn-outline" href="mailto:Terryqqy@gmail.com">Email</a>
-        <a class="btn btn-outline" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn btn-outline" href="mailto:Terryqqy AT Gmail.com">Email</a>
+        <a class="btn btn-outline" href="https://github.com/PuppyQ08" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
 
     <div class="hero-photo fade-up">
       <div>
         <div class="photo-frame">
-          <!-- Replace with: <img src="photo.jpg" alt="XYQ" /> -->
-          <div class="photo-placeholder">
-            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-              <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-            </svg>
-            <span>your photo here</span>
-          </div>
+          <img src="selfie.png" alt="XYQ"> 
         </div>
         <div class="hero-chips">
           <div class="chip">
@@ -301,7 +295,7 @@
           </div>
           <div class="chip">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-            Ph.D. · UIUC (2017–2022)
+            Tiktok Inc. (2026–Present) 
           </div>
         </div>
       </div>
@@ -365,7 +359,7 @@
         <div class="pub-venue">Zenodo</div>
         <div class="pub-year">2025</div>
         <h3 class="pub-title">An Idleness- and Failure-Tolerant Pipeline Broadcast Protocol for MPI</h3>
-        <p class="pub-authors"><strong>XYQ</strong></p>
+        <p class="pub-authors"><strong>X. Qin</strong></p>
         <p class="pub-abstract">A pipeline broadcast protocol for MPI designed to tolerate node idleness and failures, improving robustness for large-scale distributed workloads.</p>
         <div class="pub-tags">
           <span class="tag">MPI</span>
@@ -377,31 +371,23 @@
             <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor"><path d="M14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2h5.5L14 4.5z"/></svg>
             Paper
           </a>
+           <a class="pub-link" href="Bcast_paper.pdf" target="_blank" rel="noopener noreferrer">
+            <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor"><path d="M14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2h5.5L14 4.5z"/></svg>
+            PDF
+          </a>
         </div>
       </div>
       <div class="pub-carousel">
         <div class="carousel-track">
           <div class="carousel-slide active">
-            <div class="slide-placeholder">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-              <span class="fig-label">Fig. 1 · Model Architecture</span>
-            </div>
+            <img src="Bcast_fig1.png" alt="Fig. 1 · State transition diagram" />
           </div>
           <div class="carousel-slide">
-            <div class="slide-placeholder">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-              <span class="fig-label">Fig. 2 · Training Curves</span>
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <div class="slide-placeholder">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-              <span class="fig-label">Fig. 3 · Benchmark Results</span>
-            </div>
+            <img src="Bcast_fig2.png" alt="Fig. 2 · Idleness algorithm" />
           </div>
         </div>
         <div class="carousel-dots" data-carousel="0"></div>
-        <p class="carousel-caption">Replace placeholders with your actual figures. Slides auto-advance every 3 s.</p>
+        <p class="carousel-caption">State transition diagram; Idleness algorithm</p>
       </div>
     </div>
 
@@ -410,7 +396,7 @@
         <div class="pub-venue">J. Chem. Phys.</div>
         <div class="pub-year">2023</div>
         <h3 class="pub-title">Finite-temperature vibrational many-body perturbation theory: algebraic, second-quantized, diagrammatic derivation, and linked-diagram theorem</h3>
-        <p class="pub-authors"><strong>XYQ</strong>, S. Hirata</p>
+        <p class="pub-authors"><strong>X. Qin</strong>, S. Hirata</p>
         <p class="pub-abstract">Derives finite-temperature vibrational many-body perturbation theory using algebraic and second-quantized formulations, providing a diagrammatic derivation and linked-diagram theorem.</p>
         <div class="pub-tags">
           <span class="tag">Many-Body Theory</span>
@@ -418,26 +404,23 @@
           <span class="tag">Perturbation Theory</span>
         </div>
         <div class="pub-actions">
-          <a class="pub-link" href="#">Paper</a>
+          <a class="pub-link" href="https://pubs.aip.org/aip/jcp/article/159/8/084114/2908332">Paper</a>
         </div>
       </div>
       <div class="pub-carousel">
         <div class="carousel-track">
           <div class="carousel-slide active">
-            <div class="slide-placeholder">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
-              <span class="fig-label">Fig. 1 · UMAP Embedding</span>
-            </div>
+            <img src="FTtheory_fig1.png" alt="Fig. 1 · Feynman diagram" />
           </div>
           <div class="carousel-slide">
-            <div class="slide-placeholder">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M3 3l18 18M3 21L21 3"/></svg>
-              <span class="fig-label">Fig. 2 · Velocity Field</span>
-            </div>
+            <img src="FTtheory_fig2.png" alt="Fig. 2 · Born-Huang rules" />
+          </div>
+          <div class="carousel-slide">
+            <img src="FTtheory_fig3.png" alt="Fig. 3 · second-quantization formalism" />
           </div>
         </div>
         <div class="carousel-dots" data-carousel="1"></div>
-        <p class="carousel-caption">Replace placeholders with your actual figures.</p>
+        <p class="carousel-caption">Feynman diagram; Born-Huang rules; second-quantization formalism</p>
       </div>
     </div>
 
