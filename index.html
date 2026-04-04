@@ -226,6 +226,36 @@
     .news-content a { color: var(--accent); text-decoration: none; }
     .news-content a:hover { text-decoration: underline; }
 
+    /* BLOGS */
+    .blog-year-group { margin-bottom: 40px; }
+    .blog-year-group:last-child { margin-bottom: 0; }
+    .blog-year {
+      font-family: var(--mono); font-size: 0.85rem; font-weight: 400;
+      letter-spacing: 0.1em; color: var(--ink); margin-bottom: 16px;
+      border-bottom: 1px solid var(--rule); padding-bottom: 8px;
+    }
+    .blog-month-group { margin-bottom: 20px; padding-left: 8px; }
+    .blog-month-group:last-child { margin-bottom: 0; }
+    .blog-month {
+      font-family: var(--mono); font-size: 0.72rem;
+      letter-spacing: 0.08em; color: var(--ink-faint); text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .blog-links { display: flex; flex-direction: column; gap: 6px; padding-left: 12px; }
+    .blog-link {
+      font-size: 0.88rem; color: var(--ink-soft); text-decoration: none;
+      transition: color 0.2s; line-height: 1.6;
+    }
+    .blog-link:hover { color: var(--accent); }
+    .blog-link::before {
+      content: '→'; margin-right: 8px; color: var(--ink-faint);
+      font-size: 0.8rem;
+    }
+    .blog-platform {
+      font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.06em;
+      color: var(--ink-faint); margin-left: 6px; text-transform: uppercase;
+    }
+
     /* CONTACT */
     #contact { text-align: center; padding: 96px 48px 120px; }
     #contact .contact-inner { max-width: 560px; margin: 0 auto; }
@@ -284,8 +314,8 @@
   </button>
   <ul class="nav-links" id="navLinks">
     <li><a href="#hero">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#experience">Experience</a></li>
+    <li><a href="#edu-exp">Edu &amp; Exp</a></li>
+    <li><a href="#blogs">Blogs</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -329,19 +359,27 @@
 
 <div class="section-divider"></div>
 
-<section id="education">
+<section id="edu-exp">
   <div class="section-label">
     <span>02</span>
-    <h2>Education</h2>
+    <h2>Edu &amp; Exp</h2>
   </div>
   <div class="news-list">
     <div class="news-item">
-      <div class="news-date">2017 – 2022</div>
-      <div class="news-content"><strong>University of Illinois at Urbana-Champaign</strong> · Ph.D. in Physical Chemistry (Minor in Computational Science &amp; Engineering)</div>
+      <div class="news-date">01/2026 – Present</div>
+      <div class="news-content"><strong>TikTok Inc.</strong> · Software Engineer · San Jose, CA<br />• Optimize machine learning models for TikTok feed recommendation.<br />• Re-frame the recall stage for higher throughput and low latency.</div>
     </div>
     <div class="news-item">
       <div class="news-date">2023 – 2024</div>
       <div class="news-content"><strong>Georgia Institute of Technology</strong> · Online Master of Computer Science (Non-degree coursework)</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">10/2022 – 01/2026</div>
+      <div class="news-content"><strong>Viridien (CGG) Inc.</strong> · Staff Software Engineer · Houston, TX<br />• Resolved 200+ technical tickets, improving computing accuracy and efficiency for global clients.<br />• Optimized CUDA GPU kernels (memory alignment, bank-conflict resolution, kernel fusion) for full-waveform inversion / migration workloads.<br />• Refactored C/C++ data I/O, load balancing, and memory management across multi-GPU modules.<br />• Refined job scheduling strategies for master/worker nodes based on new hardware deployments.<br />• Benchmarked distributed GPU modules on NVIDIA H100 and AMD MI210/MI300.<br />• Developed a fault-tolerant MPI framework for broadcast/reduction in inversion modules.</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">2017 – 2022</div>
+      <div class="news-content"><strong>University of Illinois at Urbana-Champaign</strong> · Ph.D. in Physical Chemistry (Minor in Computational Science &amp; Engineering)</div>
     </div>
     <div class="news-item">
       <div class="news-date">2017</div>
@@ -352,21 +390,45 @@
 
 <div class="section-divider"></div>
 
-<section id="experience">
+<section id="blogs">
   <div class="section-label">
     <span>03</span>
-    <h2>Experience</h2>
+    <h2>Blogs</h2>
   </div>
-  <div class="news-list">
-    <div class="news-item">
-      <div class="news-date">01/2026 – Present</div>
-      <div class="news-content"><strong>TikTok Inc.</strong> · Software Engineer · San Jose, CA<br />• Optimize machine learning models for TikTok feed recommendation.<br />• Re-frame the recall stage for higher throughput and low latency.</div>
+
+  <div class="blog-year-group">
+    <div class="blog-year">2026</div>
+    <div class="blog-month-group">
+      <div class="blog-month">April</div>
+      <div class="blog-links">
+        <a class="blog-link" href="https://claude.ai/public/artifacts/cbe80d12-b53a-43cb-a458-53c0db5e707e" target="_blank" rel="noopener noreferrer">（纯AI）LLM推理"图内"优化高影响力论文全景图<span class="blog-platform">Claude</span></a>
+        <a class="blog-link" href="https://claude.ai/public/artifacts/44320792-0af6-4641-bfb6-fc958fe26278" target="_blank" rel="noopener noreferrer">（纯AI）2025–2026年LLM推理图内优化前沿论文综述<span class="blog-platform">Claude</span></a>
+        <a class="blog-link" href="https://claude.ai/public/artifacts/639d9fd9-9211-4bd6-b9a1-08edd1b9bcd6" target="_blank" rel="noopener noreferrer">（纯AI）大语言模型架构演进综述：从Transformer到MLA<span class="blog-platform">Claude</span></a>
+        <a class="blog-link" href="https://claude.ai/public/artifacts/b69395e6-8fcd-447a-8ce3-2ddda1f48a7b" target="_blank" rel="noopener noreferrer">（纯AI）Claude Code Skills：AI 编程工作流指南<span class="blog-platform">Claude</span></a>
+      </div>
     </div>
-    <div class="news-item">
-      <div class="news-date">10/2022 – 01/2026</div>
-      <div class="news-content"><strong>Viridien (CGG) Inc.</strong> · Staff Software Engineer · Houston, TX<br />• Resolved 200+ technical tickets, improving computing accuracy and efficiency for global clients.<br />• Optimized CUDA GPU kernels (memory alignment, bank-conflict resolution, kernel fusion) for full-waveform inversion / migration workloads.<br />• Refactored C/C++ data I/O, load balancing, and memory management across multi-GPU modules.<br />• Refined job scheduling strategies for master/worker nodes based on new hardware deployments.<br />• Benchmarked distributed GPU modules on NVIDIA H100 and AMD MI210/MI300.<br />• Developed a fault-tolerant MPI framework for broadcast/reduction in inversion modules.</div>
+    <div class="blog-month-group">
+      <div class="blog-month">January</div>
+      <div class="blog-links">
+        <a class="blog-link" href="https://zhuanlan.zhihu.com/p/1992219151352223182" target="_blank" rel="noopener noreferrer"><strong>Vibe coding时代下对于程序员能力的迷思</strong><span class="blog-platform">知乎</span></a>
+      </div>
     </div>
   </div>
+
+  <div class="blog-year-group">
+    <div class="blog-year">2025</div>
+    <div class="blog-month-group">
+      <div class="blog-month">December</div>
+      <div class="blog-links">
+        <a class="blog-link" href="https://zhuanlan.zhihu.com/p/1970722821522061231" target="_blank" rel="noopener noreferrer"><strong>AI infra 面试经验贴</strong><span class="blog-platform">知乎</span></a>
+        <a class="blog-link" href="https://zhuanlan.zhihu.com/p/1988447666510775666" target="_blank" rel="noopener noreferrer"><strong>CUDA kernel如何Padding</strong><span class="blog-platform">知乎</span></a>
+        <a class="blog-link" href="https://zhuanlan.zhihu.com/p/1978995966716696437" target="_blank" rel="noopener noreferrer"><strong>传统高性能计算行业剖析</strong><span class="blog-platform">知乎</span></a>
+        <a class="blog-link" href="https://zhuanlan.zhihu.com/p/1977204009547891795" target="_blank" rel="noopener noreferrer"><strong>天坑专业脱坑经验贴</strong><span class="blog-platform">知乎</span></a>
+        <a class="blog-link" href="https://zhuanlan.zhihu.com/p/1976467816208172191" target="_blank" rel="noopener noreferrer"><strong>硅谷AI infra 初创公司探秘</strong><span class="blog-platform">知乎</span></a>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <div class="section-divider"></div>
@@ -550,9 +612,6 @@
 
   </div>
 </section>
-
-<div class="section-divider"></div>
-
 
 <div class="section-divider"></div>
 
